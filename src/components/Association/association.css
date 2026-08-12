@@ -1,0 +1,22 @@
+.association_section {
+    padding: 100px 0;
+}
+
+.association_title h4 {
+    max-width: 800px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.association_title h3 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px !important;
+}
+
+.association_title {
+    margin-bottom: 40px;
+}

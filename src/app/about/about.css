@@ -1,0 +1,223 @@
+.about_hero {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.about_us_section {
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+
+.about_hero h2 {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 90px;
+    color: var(--black);
+    text-align: center;
+}
+
+.about_hero h2:nth-child(2) {
+    margin-left: 100px !important;
+    color: #ffffff00;
+    font-weight: 800;
+    -webkit-text-stroke-width: 3px;
+    stroke-width: 3px;
+    -webkit-text-stroke-color: var(--orange);
+    stroke: var(--orange);
+}
+
+.about_us_text {
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+}
+
+.about_us_title {
+    justify-content: center;
+    display: grid;
+}
+
+.about_us_title h1:nth-child(2) {
+    padding-left: 80px !important;
+}
+
+.about_us_title h1:nth-child(3) {
+    padding-left: 200px !important;
+    line-height: 38px;
+}
+
+.about_us_title p {
+    max-width: 550px;
+    margin-top: 20px !important;
+}
+
+.about_us_box {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    transition: 0.5s;
+    background-image: url(../../assets/images/cer.jpg);
+    background-size: contain;
+}
+
+.about_us_box_2 {
+    margin-top: 20px;
+    background-image: url(../../assets/images/cer.jpg);
+    background-size: contain;
+}
+
+.about_us_box_4 {
+    margin-top: 20px;
+    background-image: url(../../assets/images/cer.jpg);
+    background-size: contain;
+}
+
+.about_us_box_3 {
+    background-image: url(../../assets/images/cer.jpg);
+    background-size: contain;
+}
+
+.service_box:hover .services_bg_layer {
+    background-color: var(--orange);
+}
+
+.about_us_box:hover .about_us_bg_layer p {
+    opacity: 1;
+}
+
+.about_us_title h1 {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 90px;
+    color: var(--white);
+}
+
+.about_us_box:hover .about_us_bg_layer {
+    background-color: var(--orange);
+}
+
+.about_us_box:hover .about_us_bg_layer p {
+    opacity: 1;
+}
+
+.about_us_bg_layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: 0.5s;
+}
+
+.about_us_bg_layer h4 {
+    margin-bottom: 16px !important;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.about_us_bg_layer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: var(--white);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.certificate_header {
+    background-color: var(--black) !important;
+    padding: 100px 0;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 991px) {
+    .about_us_title h1 {
+        font-size: 65px !important;
+        line-height: 53px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_us_title h1 {
+        font-size: 62px !important;
+        line-height: 53px !important;
+    }
+
+    .about_us_section .hero_design_1 img {
+        display: none;
+    }
+
+    .flex_order {
+        order: 2;
+    }
+
+    .about_us_section .main_title {
+        margin-bottom: 10px;
+    }
+
+    .about_us_title h1:nth-child(3) {
+        padding-left: 111px !important;
+    }
+
+    .about_hero h2 {
+        font-size: 77px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+
+    .certificate_header {
+        padding: 50px 0;
+    }
+
+    .margin_m_top {
+        margin-top: -250px;
+    }
+
+    .about_us_title h1 {
+        font-size: 26px !important;
+        line-height: 24px !important;
+    }
+
+    .margin_m_top {
+        margin-top: -325px;
+    }
+
+    .about_us_title h1 {
+        font-size: 26px !important;
+        line-height: 24px !important;
+    }
+
+    .about_hero h2 {
+        font-size: 50px;
+        line-height: 46px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about_us_box_3 {
+        margin-top: 20px !important;
+    }
+
+    .about_us_bg_layer {
+        background-color: var(--orange-op);
+        opacity: 1;
+    }
+
+    .about_us_bg_layer p {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {}
+
+@media only screen and (max-width: 385px) {}

@@ -1,0 +1,39 @@
+.speciality_section {
+  padding: 100px 0;
+  min-height: 500px;
+  background-color: var(--gray);
+  position: relative;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+.speciality_box {
+  z-index: 100;
+  position: relative;
+}
+
+.speciality_box h4 {
+  margin: 20px 0 !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.iconsvg {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: auto;
+  bottom: 0;
+  z-index: 9;
+  transform: rotate(25deg);
+}
+
+.speciality_red {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: auto;
+  bottom: 0;
+  z-index: 9;
+  transform: rotate(25deg);
+}

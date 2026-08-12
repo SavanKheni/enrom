@@ -1,0 +1,240 @@
+@media only screen and (max-width: 1200px) {
+
+    .main_title_subtext_1,
+    .main_title_subtext_2 {
+        font-size: 38px;
+    }
+
+    .services_bg_layer {
+        padding: 24px !important;
+    }
+
+    .services_bg_layer h4 {
+        font-size: 21px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .service_title h1 {
+        font-size: 50px !important;
+        line-height: 37px !important;
+    }
+
+    .about_box {
+        flex-direction: column;
+    }
+
+    .main_title_subtext_1,
+    .main_title_subtext_2 {
+        font-size: 27px;
+    }
+
+    .testimonial_layer h1 {
+        font-size: 70px !important;
+        line-height: 68px !important;
+    }
+
+    .testimonial_layer {
+        padding-top: 140px !important;
+    }
+
+    .hero_text_responsive {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .service_box_4 {
+        margin-top: 0px !important;
+    }
+
+    .hero_img {
+        display: block !important;
+    }
+
+    .footer_first_section {
+        margin-bottom: 30px;
+    }
+
+    .navigation_bar {
+        display: none !important;
+    }
+
+    .menu {
+        display: block !important;
+    }
+
+    .dark-mode .menu-dark {
+        display: block !important;
+    }
+
+    /* 
+  .dark-mode .menu {
+    display: none !important;
+  } */
+
+    .header_round {
+        height: 415px;
+        width: 403px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero_design_1 {
+        position: absolute;
+        width: 150px;
+        top: 166px;
+    }
+
+    .responsive_hide {
+        display: none;
+    }
+
+    .hero_title {
+        display: none;
+    }
+
+    .about_img {
+        margin: 20px 0;
+    }
+
+    .responsive_order_2 {
+        order: 2;
+    }
+
+    .hero_title_responsive {
+        display: block !important;
+        font-size: 45px !important;
+        text-align: center;
+    }
+
+    .hero_truck {
+        margin-top: -48px !important;
+    }
+
+    .about_img iframe {
+        width: 100% !important;
+        height: 293px;
+    }
+
+    .about_box {
+        width: 100%;
+    }
+
+    .header_orange img {
+        width: 180px;
+    }
+
+    .speciality_box {
+        z-index: 99;
+    }
+
+    .service_box_4 {
+        margin-top: 20px !important;
+    }
+
+    .testimonial_layer h1 {
+        font-size: 60px !important;
+        line-height: 68px !important;
+    }
+
+    .main_title_subtext_1,
+    .main_title_subtext_2 {
+        width: 100%;
+    }
+
+    .main_title {
+        margin-bottom: 60px;
+    }
+
+    .association_section .hero_design_1 img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .service_title h1 {
+        font-size: 30px !important;
+        line-height: 25px !important;
+    }
+
+    .hero_section {
+        padding-top: 130px;
+    }
+
+    .truck {
+        margin-top: -150px !important;
+    }
+
+    .service_title .service_title_text:nth-child(4) {
+        padding-left: 200px !important;
+    }
+
+    .service_title .service_title_text:nth-child(3) {
+        padding-left: 100px !important;
+    }
+
+    .service_title .service_title_text:nth-child(2) {
+        padding-left: 48px !important;
+    }
+
+    .service_box_3 {
+        margin-top: 20px;
+    }
+
+    .testimonial_layer h1 {
+        font-size: 45px !important;
+        line-height: 50px !important;
+    }
+
+    .hero_design_1 {
+        width: 110px;
+    }
+
+    .header_round {
+        height: 418px !important;
+        width: 409px !important;
+        top: -269px !important;
+        left: -103px !important;
+    }
+
+    .header_orange {
+        height: 100px;
+    }
+
+    .header_orange img {
+        width: 140px;
+    }
+
+    .hero_text h1 {
+        font-size: 50px !important;
+        font-weight: 800;
+        line-height: 45px !important;
+    }
+
+    .hero_section {
+        min-height: 50vh !important;
+    }
+
+    .hero_text {
+        padding: 100px 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero_text h1 {
+        font-size: 32px !important;
+        font-weight: 800;
+        line-height: 45px !important;
+    }
+
+    .land_hero {
+        padding: 0 !important;
+    }
+
+    .truck {
+        margin-top: -100px !important;
+    }
+}
+
+@media only screen and (max-width: 385px) {}
