@@ -47,6 +47,7 @@ const VerticalDownWrapper = ({ children, direction }) => {
           position: "absolute",
           right: 0,
           translateY: xTransform,
+          zIndex: -1,
         }}
       >
         {children}
@@ -67,7 +68,7 @@ const TextWrapper = ({ children, className }) => {
   const x = useTransform(
     scrollYProgress,
     [1, 0.7, 0],
-    [0, 0, isSmallDevice ? -450 : 0]
+    [0, 0, isSmallDevice ? -450 : 0],
   );
 
   return (

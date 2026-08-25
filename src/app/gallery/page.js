@@ -47,6 +47,7 @@ const VerticalDownWrapper = ({ children, direction }) => {
           position: "absolute",
           right: 0,
           translateY: xTransform,
+          zIndex: -1,
         }}
       >
         {children}

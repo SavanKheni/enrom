@@ -158,9 +158,6 @@
         line-height: 25px !important;
     }
 
-    .hero_section {
-        padding-top: 130px;
-    }
 
     .truck {
         margin-top: -150px !important;
@@ -210,10 +207,6 @@
         font-size: 50px !important;
         font-weight: 800;
         line-height: 45px !important;
-    }
-
-    .hero_section {
-        min-height: 50vh !important;
     }
 
     .hero_text {

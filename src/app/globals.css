@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
   width: 1;
 }
@@ -20,6 +31,9 @@ body {
   color: var(--dark-white);
 }
 
+.hero_design_1 img {
+  z-index: -1;
+}
 
 .dark-mode .speciality_section {
   background-color: var(--black);

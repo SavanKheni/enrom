@@ -71,3 +71,22 @@
 @media only screen and (max-width: 400px) {}
 
 @media only screen and (max-width: 385px) {}
+
+.form_success {
+    margin-top: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #35c759;
+}
+
+.form_error {
+    margin-top: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #ff4d4f;
+}
+
+.contact_form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -1,7 +1,10 @@
 "use client";
-import React, { useRef } from "react";
+
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { useTransform, motion, useScroll } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
 import grayImg from "../../assets/images/right-grey-1.svg";
 import "./contact.css";
 
@@ -9,7 +12,9 @@ const fadeIn = (direction, delay, translate) => {
   return {
     hidden: {
       y: direction === "up" ? 80 : direction === "down" ? translate : 0,
+
       x: direction === "left" ? 300 : direction === "right" ? translate : 0,
+
       transition: {
         type: "tween",
         duration: 1.5,
@@ -17,9 +22,11 @@ const fadeIn = (direction, delay, translate) => {
         ease: [0.25, 0.6, 0.3, 0.8],
       },
     },
+
     show: {
       y: 0,
       x: 0,
+
       transition: {
         type: "tween",
         duration: 1.4,
@@ -29,21 +36,28 @@ const fadeIn = (direction, delay, translate) => {
     },
   };
 };
+
 const VerticalDownWrapper = ({ children, direction }) => {
   function useParallax(value, distance) {
     return useTransform(value, [0, 0.3], [-distance, distance]);
   }
+
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+  });
+
   const xTransform = useParallax(scrollYProgress, direction);
+
   return (
     <div ref={ref}>
       <motion.div
         style={{
-          zIndex: 1,
           position: "absolute",
           right: 0,
           translateY: xTransform,
+          zIndex: -1,
         }}
       >
         {children}
@@ -53,13 +67,56 @@ const VerticalDownWrapper = ({ children, direction }) => {
 };
 
 const Gallery = () => {
+  const formRef = useRef();
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+    setStatus("");
+
+    try {
+      await emailjs.sendForm(
+        "service_ontbn7p",
+        "template_t9j5tl5",
+        formRef.current,
+        {
+          publicKey: "GReW3Pi4EQevIDotQ",
+        },
+      );
+
+      setStatus("success");
+
+      // Clear form
+      formRef.current.reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <main>
+      {/* =========================
+          DECORATIVE IMAGE
+      ========================== */}
+
       <VerticalDownWrapper direction={500}>
         <div className="hero_design_1">
           <Image src={grayImg} alt="" width={280} height={280} priority />
         </div>
       </VerticalDownWrapper>
+
+      {/* =========================
+          CONTACT SECTION
+      ========================== */}
+
       <section className="contact_section">
         <div className="container">
           <div className="row">
@@ -73,7 +130,9 @@ const Gallery = () => {
               >
                 HAVE
               </motion.h2>
+
               <h2>ANY</h2>
+
               <motion.h2
                 className="service_title_text"
                 variants={fadeIn("left", 0, -100)}
@@ -85,6 +144,11 @@ const Gallery = () => {
               </motion.h2>
             </div>
           </div>
+
+          {/* =========================
+              CONTACT FORM
+          ========================== */}
+
           <motion.div
             variants={fadeIn("up", 0.4, -100)}
             initial="hidden"
@@ -93,31 +157,112 @@ const Gallery = () => {
             className="row mt-5 justify_center"
           >
             <div className="col-lg-8 col-md-12">
-              <form className="contact_form">
-                <input type="text" placeholder="Enter Name" required />
-                <input placeholder="Enter Email" type="email" required />
-                <input type="text" placeholder="Enter Mobile no" required />
-                <input type="text" placeholder="Enter Company Name" required />
-                <input type="text" placeholder="Enter Company Type" required />
-                <input type="text" placeholder="Enter Website" required />
-                <textarea rows={5} placeholder="Enter Message" />
-                <button className="button-92" type="submit">
-                  Submit
+              <form
+                ref={formRef}
+                className="contact_form"
+                onSubmit={handleSubmit}
+              >
+                {/* Name */}
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
+
+                {/* Email */}
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  required
+                />
+
+                {/* Mobile */}
+
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="Enter Mobile no"
+                  required
+                />
+
+                {/* Company */}
+
+                <input
+                  type="text"
+                  name="company_name"
+                  placeholder="Enter Company Name"
+                  required
+                />
+
+                {/* Company Type */}
+
+                <input
+                  type="text"
+                  name="company_type"
+                  placeholder="Enter Company Type"
+                  required
+                />
+
+                {/* Website */}
+
+                <input type="url" name="website" placeholder="Enter Website" />
+
+                {/* Message */}
+
+                <textarea
+                  rows={5}
+                  name="message"
+                  placeholder="Enter Message"
+                  required
+                />
+
+                {/* Submit */}
+
+                <button className="button-92" type="submit" disabled={loading}>
+                  {loading ? "Sending..." : "Submit"}
                 </button>
+
+                {/* Success */}
+
+                {status === "success" && (
+                  <p className="form_success">
+                    ✓ Thank you! Your message has been sent successfully.
+                  </p>
+                )}
+
+                {/* Error */}
+
+                {status === "error" && (
+                  <p className="form_error">
+                    Something went wrong. Please try again.
+                  </p>
+                )}
               </form>
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* =========================
+          GOOGLE MAP
+      ========================== */}
+
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7795418154797!2d72.87525077439327!3d21.24058898047102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f4863f918a1%3A0x6703550502a89486!2sAbc-2%20Building!5e0!3m2!1sen!2sin!4v1699109420553!5m2!1sen!2sin"
         width="100%"
         height="450"
-        style={{ border: 0 }}
-        allowfullscreen=""
+        style={{
+          border: 0,
+        }}
+        allowFullScreen
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Company Location"
+      />
     </main>
   );
 };

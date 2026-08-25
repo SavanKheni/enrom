@@ -1,61 +1,604 @@
-.hero_title,
-.hero_title_responsive {
-  font-size: 60px;
-  font-weight: 800;
-  color: var(--white);
-  position: relative;
-  z-index: 1;
-  font-style: italic;
-  margin-bottom: 33px !important;
-}
-
-.hero_title_responsive {
-  display: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 
 .hero_section {
-  padding-top: 170px;
-  background-color: #0f0e14;
-  color: var(--white);
+  position: relative;
+  background: #05070a;
+  background-image: url(https://www.renukalogistics.com/uploads/slider/5.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 0;
+  overflow: hidden;
+  margin: 0 18px;
+  border-radius: 10px;
+  isolation: isolate;
+}
+
+/* subtle dark overlay */
+.hero_section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(5, 7, 10, 0.98) 0%,
+      rgba(5, 7, 10, 0.9) 48%,
+      rgba(5, 7, 10, 0.72) 100%);
+  z-index: -2;
+}
+
+/* grid */
+.hero_grid_bg {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px);
+
+  background-size: 48px 48px;
+
+  mask-image: radial-gradient(ellipse at 30% 30%,
+      black 0%,
+      rgba(0, 0, 0, 0.8) 45%,
+      transparent 78%);
+
+  pointer-events: none;
+}
+
+/* content row */
+.hero_row {
+  align-items: center;
   position: relative;
   z-index: 1;
-  height: 600px;
 }
 
-.hero_title span,
-.hero_title_responsive span {
-  color: #fd6500;
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.hero_eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+
+  color: #8b93a1;
+
+  margin-bottom: 20px;
 }
 
-.hero_subtitle {
+.hero_eyebrow_dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: var(--orange);
+
+  box-shadow:
+    0 0 0 4px rgba(255, 106, 0, 0.12),
+    0 0 12px rgba(255, 106, 0, 0.35);
+}
+
+/* =========================================================
+   HEADLINE
+========================================================= */
+
+.hero_title {
+  max-width: 680px;
+
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
-  margin-top: 20px !important;
-  margin-bottom: 10px !important;
-  position: relative;
-  z-index: 1;
+
+  /*
+    68px on large desktop,
+    scales smoothly down on smaller screens.
+  */
+  font-size: clamp(48px, 4.2vw, 68px);
+
+  line-height: 0.98;
+  letter-spacing: 0.2px;
+
+  text-transform: uppercase;
+
+  margin: 0 0 22px !important;
 }
+
+.hero_title span {
+  color: var(--orange);
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
 
 .hero_text {
-  position: relative;
-  z-index: 1;
+  max-width: 440px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #b7bec9;
+
+  margin: 0 0 30px !important;
 }
 
-.hero_back::before {
+/* =========================================================
+   CTA
+========================================================= */
+
+.hero_cta_row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 46px;
+}
+
+.hero_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  padding: 13px 24px;
+
+  border-radius: 3px;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* primary CTA */
+.hero_btn_solid {
+  background: var(--orange);
+  color: #05070a;
+
+  border: 1px solid var(--orange);
+
+  box-shadow:
+    0 8px 24px rgba(255, 106, 0, 0.12);
+}
+
+.hero_btn_solid:hover {
+  background: #ff8128;
+  border-color: #ff8128;
+  color: #05070a;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(255, 106, 0, 0.2);
+}
+
+/* secondary CTA */
+.hero_btn_ghost {
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid #303742;
+
+  color: #e7eaf0 !important;
+
+  backdrop-filter: blur(8px);
+}
+
+.hero_btn_ghost:hover {
+  background: rgba(255, 106, 0, 0.06);
+
+  border-color: var(--orange);
+  color: var(--orange);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.hero_stats {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.hero_stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 76px;
+}
+
+.hero_stat_num {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1;
+
+  color: #fff;
+}
+
+.hero_stat_label {
+  margin-top: 6px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  font-weight: 500;
+
+  color: #6f7885;
+
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.hero_stat_divider {
+  width: 1px;
+  height: 34px;
+
+  background: #292f38;
+}
+
+/* =========================================================
+   ROUTE PANEL
+========================================================= */
+
+.hero_panel {
+  position: relative;
+
+  background:
+    linear-gradient(145deg,
+      rgba(16, 21, 28, 0.96),
+      rgba(10, 14, 19, 0.98));
+
+  border: 1px solid #252c35;
+
+  border-radius: 6px;
+
+  padding: 25px 25px 19px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+/* subtle orange glow */
+.hero_panel::before {
   content: "";
-  height: 100%;
-  width: 100%;
+
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../../assets/images/heroback.jpg);
+
+  width: 180px;
+  height: 180px;
+
+  top: -100px;
+  right: -70px;
+
+  background: rgba(255, 106, 0, 0.08);
+
+  filter: blur(50px);
+
+  pointer-events: none;
 }
 
-.hero_truck {
-  z-index: 1;
+/* panel top */
+.hero_panel_top {
   position: relative;
-  margin-top: -135px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  color: #6f7885;
+
+  margin-bottom: 2px;
+}
+
+.hero_panel_status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--orange);
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.hero_status_dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--orange);
+
+  box-shadow: 0 0 8px rgba(255, 106, 0, 0.5);
+
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+}
+
+/* =========================================================
+   ROUTE SVG
+========================================================= */
+
+.hero_route_svg {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  min-height: 245px;
+}
+
+.hero_route_label {
+  fill: #8b93a1;
+
+  font-family: "IBM Plex Mono", monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   MANIFEST
+========================================================= */
+
+.hero_manifest {
+  position: relative;
+  z-index: 1;
+
+  border-top: 1px dashed #252c35;
+
+  padding-top: 12px;
+  margin-top: 0;
+}
+
+.hero_manifest_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+
+  color: #7f8895;
+
+  padding: 5px 0;
+}
+
+.hero_manifest_row span:last-child {
+  color: #e5e8ec;
+  font-weight: 500;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+  .hero_section {
+    padding: 60px 0;
+  }
+
+  .hero_panel {
+    margin-left: 8px;
+  }
+}
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+  .hero_section {
+    padding: 40px 0;
+  }
+
+  .hero_title {
+    font-size: 52px;
+  }
+
+  .hero_panel {
+    margin-top: 10px;
+  }
+
+  .hero_stats {
+    gap: 16px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .hero_section {
+    margin: 0 12px 16px;
+  }
+
+  .hero_row {
+    align-items: flex-start;
+  }
+
+  .hero_title {
+    font-size: 48px;
+  }
+
+  .hero_panel {
+    margin-top: 42px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .hero_section {
+    padding: 38px 0 45px;
+    margin: 0 8px 12px;
+
+    border-radius: 8px;
+  }
+
+  .hero_eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.1px;
+  }
+
+  .hero_title {
+    font-size: 38px;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .hero_text {
+    font-size: 14px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+  }
+
+  .hero_cta_row {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+  }
+
+  .hero_btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero_stats {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hero_stat_divider {
+    display: none;
+  }
+
+  .hero_stat_num {
+    font-size: 23px;
+  }
+
+  .hero_panel {
+    margin-top: 40px;
+    padding: 20px 16px 16px;
+  }
+
+  .hero_route_svg {
+    min-height: auto;
+  }
+
+  .hero_manifest_row {
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .hero_section {
+    padding: 32px 0 40px;
+  }
+
+  .hero_title {
+    font-size: 32px;
+  }
+
+  .hero_eyebrow {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .hero_stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .hero_stat {
+    min-width: auto;
+  }
+
+  .hero_stat_num {
+    font-size: 21px;
+  }
+
+  .hero_stat_label {
+    font-size: 8px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL
+========================================================= */
+
+@media (max-width: 350px) {
+  .hero_title {
+    font-size: 29px;
+  }
+
+  .hero_eyebrow {
+    font-size: 8px;
+  }
+
+  .hero_panel_top {
+    font-size: 8px;
+  }
+
+  .hero_manifest_row {
+    font-size: 8px;
+  }
 }
