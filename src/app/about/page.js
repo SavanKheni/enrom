@@ -112,12 +112,12 @@ const ABOUT_PARAGRAPHS_TOP = [
     body: "Enorm International is a world-class provider of innovative logistics and supply-chain services, with an extensive network across India. We offer the full range of transportation solutions needed to support your business growth, with customised and cost-effective services for both domestic and international customers.",
   },
   {
-    body: "Established in 2011, Enorm International is a supply-chain management and logistics company based in Nashik. We are a customer-centric, technology-driven, and process-oriented company, adapting to each customer's needs to plan cost-effective storage and distribution solutions tailored to their specific requirements. We are a leader in providing sophisticated transportation, warehousing, and distribution services across Maharashtra, Gujarat, and pan-India — offering professional and efficient 3PL and 4PL solutions.",
+    body: "Established in 2011, Enorm International is a supply-chain management and logistics company based in Nashik. We are a customer-centric, technology-driven, and process-oriented company, adapting to each customers needs to plan cost-effective storage and distribution solutions tailored to their specific requirements. We are a leader in providing sophisticated transportation, warehousing, and distribution services across Maharashtra, Gujarat, and pan-India — offering professional and efficient 3PL and 4PL solutions.",
   },
 ];
 
 const ABOUT_PARAGRAPHS_BOTTOM = [
-  "As a global company based in India, Enorm International is exceptionally positioned to serve both international and domestic customers in the world's fastest-growing markets. Providing advanced customer-specific solutions through our value-creating services and IT technology in supply-chain management, our comprehensive service network and platforms allow you to make all the right moves for your business.",
+  "As a global company based in India, Enorm International is exceptionally positioned to serve both international and domestic customers in the world&apos;s fastest-growing markets. Providing advanced customer-specific solutions through our value-creating services and IT technology in supply-chain management, our comprehensive service network and platforms allow you to make all the right moves for your business.",
   "Enorm International focuses on serving customers with global sourcing and supply-chain-management needs, creating value through innovative end-to-end international logistics programs. Our dedicated and experienced professionals provide customised logistics solutions according to your specific demands, backed by a track record of reliable execution across every shipment we handle.",
 ];
 
@@ -125,7 +125,7 @@ const SERVICE_LOCATIONS =
   "Nashik, Mumbai, Pune, Vadodara, Ankleshwar, and JNPT";
 
 const ABOUT_CLOSING_TEXT =
-  "on a daily basis with the support of our own fleet and godown offices situated at the destination, staffed by skilled teams to serve esteemed organisations like yours. We've served thousands of companies and individuals across India, moving their goods from point A to point B — smarter and faster.";
+  "on a daily basis with the support of our own fleet and godown offices situated at the destination, staffed by skilled teams to serve esteemed organisations like yours. We&apos;ve served thousands of companies and individuals across India, moving their goods from point A to point B — smarter and faster.";
 
 const CERTIFICATES = [
   {

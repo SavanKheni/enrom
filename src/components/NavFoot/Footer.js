@@ -164,7 +164,7 @@ const Footer = () => {
             <p>Shipping updates and industry notes, occasionally — no spam.</p>
             {subscribed ? (
               <div className="footer_newsletter_success">
-                ✓ You're subscribed — thank you.
+                ✓ You&apos;re subscribed — thank you.
               </div>
             ) : (
               <form
