@@ -39,10 +39,11 @@
     transition: 0.5s;
     background-image: url("../../assets/images/black-pepper-powder.jpg");
     background-size: cover;
+      margin-bottom: 20px;
 }
 
 .service_box_2 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-image: url("../../assets/images/Black-pepper.jpg");
 }
 

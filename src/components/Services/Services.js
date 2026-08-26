@@ -73,35 +73,43 @@ const Services = () => {
               <TextWrapperRight className="service_title_text">
                 OUR
               </TextWrapperRight>
+
               <TextWrapperRight className="service_title_text">
-                PROVIDED
+                PREMIUM
               </TextWrapperRight>
+
               <h1
                 style={{ fontSize: "130px" }}
                 className="text_orange service_title_text"
               >
-                PRODUCTS
+                SPICES
               </h1>
+
               <TextWrapperLeft
                 className="service_title_text"
                 font="130px"
-                xLeft={true}
               >
-                FOR YOU
+                FROM INDIA
               </TextWrapperLeft>
+
               <p>
-                Whatever the size of shipment, or preferred transportation we
-                have the perfect solution. Need assistance with customs? Secure
-                and sanitary warehousing? We have you covered.
+                Discover the authentic taste and aroma of Indian spices.
+                EROM International sources and exports quality spices from
+                India, connecting trusted suppliers with food businesses and
+                buyers across global markets.
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <div className="container-fluid mt-5">
         <div className="row service_box_main">
           {serviceData.map((service, i) => (
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12" key={i}>
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 col-12"
+              key={i}
+            >
               <div className={`service_box service_box_${i + 1}`}>
                 <div className="services_bg_layer">
                   <h4>{service.title}</h4>

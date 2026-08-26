@@ -109,3 +109,101 @@
 @media only screen and (max-width: 400px) {}
 
 @media only screen and (max-width: 385px) {}
+
+.clientele_us_box_main {
+    counter-reset: client;
+}
+
+.clientele_us_box {
+    height: 220px;
+    width: 100%;
+    position: relative;
+    transition: 0.4s ease;
+    margin-bottom: 24px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.clientele_us_bg_layer {
+    height: 100%;
+    width: 100%;
+    background-color: #141414;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 32px 28px 28px;
+    transition: 0.4s ease;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* ghost index number */
+.clientele_us_bg_layer::before {
+    counter-increment: client;
+    content: "0" counter(client);
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 34px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.12);
+    transition: color 0.4s ease;
+    letter-spacing: 1px;
+}
+
+/* accent rule above title */
+.clientele_us_bg_layer::after {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: 0;
+    width: 32px;
+    height: 3px;
+    background: var(--orange);
+    transition: width 0.4s ease;
+}
+
+.clientele_us_bg_layer h4 {
+    margin: 20px 0 12px !important;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+.clientele_us_bg_layer p {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: rgba(242, 240, 236, 0.6);
+    margin: 0;
+}
+
+/* hover: border lifts, number fills orange, rule extends */
+.clientele_us_box:hover {
+    transform: translateY(-4px);
+}
+
+.clientele_us_box:hover .clientele_us_bg_layer {
+    border-color: rgba(255, 107, 26, 0.5);
+    background-color: #191919;
+}
+
+.clientele_us_box:hover .clientele_us_bg_layer::before {
+    color: rgba(255, 107, 26, 0.35);
+}
+
+.clientele_us_box:hover .clientele_us_bg_layer::after {
+    width: 56px;
+}
+
+@media only screen and (max-width: 575px) {
+    .clientele_us_box {
+        height: 200px;
+    }
+
+    .clientele_us_bg_layer {
+        padding: 24px 20px;
+    }
+}

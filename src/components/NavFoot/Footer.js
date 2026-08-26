@@ -61,9 +61,7 @@ const Footer = () => {
             onClick={() => router.push("/")}
           />
           <p>
-            Consistently reliable in an ever-changing world. Our dedicated team
-            of industry professionals and our constant investment in disruptive
-            technology ensures that your deliveries arrive on time, every time.
+        Reliable quality. Authentic Indian spices. Global reach. We combine trusted sourcing, careful quality control, and dependable export coordination to bring the finest flavors of India to markets around the world.
           </p>
           {/* <div className="footer_social_row">
             <a href="#" aria-label="LinkedIn">

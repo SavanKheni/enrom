@@ -93,6 +93,48 @@ const TextWrapper = ({ children, className }) => {
     </section>
   );
 };
+const clienteleData = [
+  {
+    title: "IMPORTERS",
+    description:
+      "International importers looking for reliable sourcing of premium Indian spices.",
+  },
+  {
+    title: "DISTRIBUTORS",
+    description:
+      "Spice distributors seeking consistent quality and dependable supply.",
+  },
+  {
+    title: "WHOLESALERS",
+    description:
+      "Wholesale buyers sourcing Indian spices for regional and international markets.",
+  },
+  {
+    title: "FOOD MANUFACTURERS",
+    description:
+      "Food manufacturers requiring quality spices for processing and production.",
+  },
+  {
+    title: "RETAILERS",
+    description:
+      "Retail businesses and private-label brands looking to offer authentic Indian spices.",
+  },
+  {
+    title: "RESTAURANTS",
+    description:
+      "Restaurants and hospitality businesses sourcing authentic spices for their kitchens.",
+  },
+  {
+    title: "FOODSERVICE",
+    description:
+      "Foodservice suppliers requiring reliable bulk spice sourcing.",
+  },
+  {
+    title: "TRADING COMPANIES",
+    description:
+      "International trading companies seeking trusted Indian spice supply partners.",
+  },
+];
 const Clientele = () => {
   return (
     <main>
@@ -129,18 +171,24 @@ const Clientele = () => {
           <div className="row mt-5">
             <div className="col-sm-12 col-md-4">
               <div className="main_title">
-                <TextWrapper className="main_title_subtext_1">OUR</TextWrapper>
-                <TextWrapper className="main_title_subtext_2">
-                  SUCCESSFUL
+                <TextWrapper className="main_title_subtext_1">
+                  OUR
                 </TextWrapper>
+
+                <TextWrapper className="main_title_subtext_2">
+                  GLOBAL
+                </TextWrapper>
+
                 <TextWrapper className="main_title_subtext_1">
                   BUSINESS
                 </TextWrapper>
+
                 <TextWrapper className="main_title_subtext_2">
-                  ASSOCIATIONS
+                  PARTNERS
                 </TextWrapper>
               </div>
             </div>
+
             <div className="col-sm-12 col-md-8 d_flex items_center">
               <motion.div
                 variants={fadeIn("up", 0.4, -100)}
@@ -151,28 +199,27 @@ const Clientele = () => {
               >
                 <p className="clientele_text">
                   <b>
-                    Its grateful to be recognized, we appreciate the trust and
-                    support given from our valued customers and giving the
-                    chance to serve them.
+                    At EROM International, we are proud to build strong and lasting
+                    relationships with businesses that value the authentic taste and
+                    quality of Indian spices.
                   </b>{" "}
-                  We are honoured to have some of the esteemed companies on our
-                  clientele and we aim to add more titles to this as we
-                  progress. At Renuka Logistics, we believe that the logistics
-                  industry goes beyond service. It s all about successful
-                  business associations and strong relationships that we have
-                  built with our valuable clients over the years.
+                  From international importers and distributors to wholesalers, food
+                  manufacturers, restaurants, and retail businesses, we work with
+                  partners who share our commitment to quality and reliability.
                 </p>
+
                 <p className="clientele_text">
-                  Established in 2007 Renuka Logistics Pvt. Ltd. is a
-                  supply-chain management and Logistic Company based in Nashik.
-                  We are a customer-centric, technology-driven and
-                  process-oriented company. We adapt to our customers
-                  necessities and plan a cost-effective storage and distribution
-                  solution tailored to their specific requirements. We are a
-                  leader in providing sophisticated transportation, warehousing
-                  and distribution services in Maharashtra, Gujarat and also all
-                  over India, offering professional and efficient 3PL and 4PL
-                  solutions.
+                  We understand that every international buyer has different sourcing
+                  requirements. That is why we focus on dependable supply, consistent
+                  product quality, professional communication, and efficient export
+                  coordination. Our goal is not simply to ship spices — it is to build
+                  long-term partnerships that create value for both sides.
+                </p>
+
+                <p className="clientele_text">
+                  From India's spice-growing regions to markets across the world,
+                  <b> EROM International</b> aims to make sourcing premium Indian spices
+                  simple, reliable, and transparent.
                 </p>
               </motion.div>
             </div>
@@ -180,158 +227,19 @@ const Clientele = () => {
         </div>
         <div className="container-fluid mt-5">
           <div className="row clientele_us_box_main">
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c1} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>ABHIJEET</h4>
+            {clienteleData.map((client, index) => (
+              <div
+                className="col-lg-3 col-md-4 col-sm-6 col-12"
+                key={client.title}
+              >
+                <div className={`clientele_us_box clientele_box_${index + 1}`}>
+                  <div className="clientele_us_bg_layer">
+                    <h4>{client.title}</h4>
+                    <p>{client.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c2} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>A.P.R.A.S LTD</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c3} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>IMPERIAL AUTO</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c4} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>JP ENTERPRISES</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c5} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>LEAR CORPORATION</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c6} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>ARTI</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c7} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>SUDAL INDISTRIES LTD</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c8} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>ABB LTD</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c9} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>SMART SOLUTION</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c10} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>JYOTI LTD</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c11} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>UKAY METAL</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c12} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>L & T</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c13} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>LUCKY SWITCHGEAR</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c14} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>MAHINDRA</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c15} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>SCHNEIDER ELECTRIC</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c16} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>STELMEC</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c17} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>SAFARI</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c18} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>FUTURE SUPPLY CHAIN</h4>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <div className="clientele_us_box">
-                <Image src={c19} alt="" />
-                <div className="clientele_us_bg_layer">
-                  <h4>DELTA</h4>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

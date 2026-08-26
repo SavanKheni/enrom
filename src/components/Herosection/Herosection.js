@@ -46,21 +46,22 @@ const Herosection = () => {
               {/* Eyebrow */}
               <motion.div variants={item} className="hero_eyebrow">
                 <span className="hero_eyebrow_dot" />
-                GLOBAL FREIGHT NETWORK &nbsp;·&nbsp; EST. 2011
+                INDIAN SPICE EXPORTERS &nbsp;·&nbsp; EST. 2011
               </motion.div>
 
               {/* Heading */}
               <motion.h1 variants={item} className="hero_title">
-                WE MOVE
+                INDIA'S SPICES
                 <br />
-                ANYTHING <span>ANYWHERE</span>
+                <span>TO THE WORLD</span>
               </motion.h1>
 
               {/* Description */}
               <motion.p variants={item} className="hero_text">
-                Air, ocean, and land freight coordinated from a single
-                dashboard. Real routes, real ETAs, no guesswork — from first
-                mile to final port of call.
+                Premium Indian spices sourced with care and exported
+                worldwide. From authentic origin to global destinations,
+                EROM International delivers quality, purity, and rich Indian
+                flavour across borders.
               </motion.p>
 
               {/* CTA */}
@@ -69,23 +70,23 @@ const Herosection = () => {
                   Get a Quote
                 </Link>
 
-                <Link href="/track" className="hero_btn hero_btn_ghost">
-                  Track a Shipment
+                <Link href="/products" className="hero_btn hero_btn_ghost">
+                  Explore Spices
                 </Link>
               </motion.div>
 
               {/* Stats */}
               <motion.div variants={item} className="hero_stats">
                 <div className="hero_stat">
-                  <span className="hero_stat_num">150+</span>
+                  <span className="hero_stat_num">25+</span>
 
-                  <span className="hero_stat_label">Ports Served</span>
+                  <span className="hero_stat_label">Spice Varieties</span>
                 </div>
 
                 <div className="hero_stat_divider" />
 
                 <div className="hero_stat">
-                  <span className="hero_stat_num">40+</span>
+                  <span className="hero_stat_num">20+</span>
 
                   <span className="hero_stat_label">Countries</span>
                 </div>
@@ -93,9 +94,9 @@ const Herosection = () => {
                 <div className="hero_stat_divider" />
 
                 <div className="hero_stat">
-                  <span className="hero_stat_num">24/7</span>
+                  <span className="hero_stat_num">100%</span>
 
-                  <span className="hero_stat_label">Live Ops</span>
+                  <span className="hero_stat_label">Quality Focus</span>
                 </div>
               </motion.div>
             </motion.div>
@@ -124,11 +125,11 @@ const Herosection = () => {
             >
               {/* Panel Header */}
               <div className="hero_panel_top">
-                <span className="hero_panel_label">ROUTE / 09</span>
+                <span className="hero_panel_label">EXPORT / 09</span>
 
                 <span className="hero_panel_status">
                   <span className="hero_status_dot" />
-                  IN TRANSIT
+                  EXPORTING
                 </span>
               </div>
 
@@ -178,7 +179,7 @@ const Herosection = () => {
                 />
 
                 <text x="40" y="235" className="hero_route_label">
-                  NHAVA SHEVA
+                  INDIA
                 </text>
 
                 {/* Destination */}
@@ -194,7 +195,7 @@ const Herosection = () => {
                 />
 
                 <text x="360" y="42" className="hero_route_label">
-                  ROTTERDAM
+                  GLOBAL
                 </text>
 
                 {/* Moving marker */}
@@ -214,8 +215,10 @@ const Herosection = () => {
                     ease: "easeInOut",
                   }}
                   style={{
-                    offsetPath: "path('M40,210 C140,90 320,220 440,60')",
-                    filter: "drop-shadow(0 0 5px rgba(255,106,0,0.65))",
+                    offsetPath:
+                      "path('M40,210 C140,90 320,220 440,60')",
+                    filter:
+                      "drop-shadow(0 0 5px rgba(255,106,0,0.65))",
                   }}
                 />
               </svg>
@@ -237,18 +240,18 @@ const Herosection = () => {
                 }}
               >
                 <div className="hero_manifest_row">
-                  <span>WAYBILL</span>
-                  <span>ENI-88231-IN</span>
+                  <span>PRODUCT</span>
+                  <span>INDIAN SPICES</span>
                 </div>
 
                 <div className="hero_manifest_row">
-                  <span>ETA</span>
-                  <span>18 SEP · 14:32 GMT</span>
+                  <span>ORIGIN</span>
+                  <span>INDIA</span>
                 </div>
 
                 <div className="hero_manifest_row">
-                  <span>CARGO</span>
-                  <span>320 TEU</span>
+                  <span>MARKET</span>
+                  <span>WORLDWIDE</span>
                 </div>
               </motion.div>
             </motion.div>
