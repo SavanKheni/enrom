@@ -51,7 +51,7 @@ const Herosection = () => {
 
               {/* Heading */}
               <motion.h1 variants={item} className="hero_title">
-                INDIA'S SPICES
+                INDIA&apos;S SPICES
                 <br />
                 <span>TO THE WORLD</span>
               </motion.h1>

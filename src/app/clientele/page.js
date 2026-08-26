@@ -217,7 +217,7 @@ const Clientele = () => {
                 </p>
 
                 <p className="clientele_text">
-                  From India's spice-growing regions to markets across the world,
+                  From India&apos;s spice-growing regions to markets across the world,
                   <b> EROM International</b> aims to make sourcing premium Indian spices
                   simple, reliable, and transparent.
                 </p>

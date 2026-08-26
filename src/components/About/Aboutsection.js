@@ -37,7 +37,7 @@ const Aboutsection = () => {
                 We carefully source our spices from trusted suppliers and focus
                 on quality, purity, proper handling, and reliable delivery.
                 With a commitment to transparency and long-term relationships,
-                we aim to make every shipment a reflection of India's rich
+                we aim to make every shipment a reflection of India&apos;s rich
                 spice heritage.
               </p>
             </div>
@@ -116,7 +116,7 @@ const Aboutsection = () => {
                   </li>
 
                   <li>
-                    To represent India's rich spice heritage on the global
+                    To represent India&apos;s rich spice heritage on the global
                     stage.
                   </li>
                 </ul>
