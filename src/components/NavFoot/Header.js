@@ -13,9 +13,8 @@ import { useTheme } from "../ThemeLayout";
 
 const Hamburger = ({ open, dark, onClick }) => (
   <button
-    className={`hamburger_btn${dark ? " hamburger_dark" : ""}${
-      open ? " hamburger_open" : ""
-    }`}
+    className={`hamburger_btn${dark ? " hamburger_dark" : ""}${open ? " hamburger_open" : ""
+      }`}
     onClick={onClick}
     aria-label="Open menu"
   >
@@ -38,8 +37,7 @@ const Header = () => {
   const isScrolled = useMemo(() => scrollPosition > 100, [scrollPosition]);
 
   const getLinkClass = (path) =>
-    `nav_link font_14 font_700${pathname === path ? " active_link" : ""}${
-      pathname === "/" && !isScrolled && pathname !== path ? " link_white" : ""
+    `nav_link font_14 font_700${pathname === path ? " active_link" : ""}${pathname === "/" && !isScrolled && pathname !== path ? " link_white" : ""
     }`;
 
   const renderNavLink = (path, label) => {
@@ -60,48 +58,46 @@ const Header = () => {
 
   return (
     <>
-      <section>
-        <div className={`main_header${isScrolled ? " scroll_header" : ""}`}>
-          <div className="container-fluid">
-            <div
-              className="inner_header d_flex gap_2 justify_between items_center"
-              style={{ position: "relative" }}
+      <div className={`main_header${isScrolled ? " scroll_header" : ""}`}>
+        <div className="container-fluid">
+          <div
+            className="inner_header d_flex gap_2 justify_between items_center"
+            style={{ position: "relative" }}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.25, 0.25, 0.25, 0.75] }}
             >
-              <motion.div
-                initial={{ opacity: 0, y: -12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: [0.25, 0.25, 0.25, 0.75] }}
-              >
-                <Image
-                  src={logo}
-                  width={isScrolled ? 90 : 110}
-                  priority
-                  className="logo-light"
-                  alt=""
-                  onClick={() => router.push("/")}
-                  style={{ transition: "width 0.35s ease", cursor: "pointer" }}
-                />
-              </motion.div>
-
-              <div className="d_flex gap_1 navigation_bar">
-                {renderNavLink("/", "HOME")}
-                {renderNavLink("/about", "ABOUT")}
-                {renderNavLink("/services", "PRODUCTS")}
-                {renderNavLink("/clientele", "CLIENTELE")}
-                {renderNavLink("/gallery", "GALLERY")}
-                {renderNavLink("/contact", "CONTACT")}
-                <ModeSwitch />
-              </div>
-
-              <Hamburger
-                open={show}
-                dark={!isDarkMode && (isScrolled || pathname !== "/")}
-                onClick={handleShow}
+              <Image
+                src={logo}
+                width={isScrolled ? 90 : 110}
+                priority
+                className="logo-light"
+                alt=""
+                onClick={() => router.push("/")}
+                style={{ transition: "width 0.35s ease", cursor: "pointer" }}
               />
+            </motion.div>
+
+            <div className="d_flex gap_1 navigation_bar">
+              {renderNavLink("/", "HOME")}
+              {renderNavLink("/about", "ABOUT")}
+              {renderNavLink("/services", "PRODUCTS")}
+              {renderNavLink("/clientele", "CLIENTELE")}
+              {/* {renderNavLink("/gallery", "GALLERY")} */}
+              {renderNavLink("/contact", "CONTACT")}
+              <ModeSwitch />
             </div>
+
+            <Hamburger
+              open={show}
+              dark={!isDarkMode && (isScrolled || pathname !== "/")}
+              onClick={handleShow}
+            />
           </div>
         </div>
-      </section>
+      </div>
 
       <Offcanvas
         show={show}
@@ -126,7 +122,7 @@ const Header = () => {
               ["/about/", "ABOUT"],
               ["/services/", "PRODUCTS"],
               ["/clientele/", "CLIENTELE"],
-              ["/gallery/", "GALLERY"],
+              // ["/gallery/", "GALLERY"],
               ["/contact/", "CONTACT"],
             ].map(([path, label], i) => (
               <motion.div
@@ -138,11 +134,10 @@ const Header = () => {
                 <Link
                   href={path}
                   onClick={handleClose}
-                  className={`${
-                    pathname === path.replace(/\/$/, "") || pathname === path
+                  className={`${pathname === path.replace(/\/$/, "") || pathname === path
                       ? "active_link"
                       : ""
-                  } font_14 font_700`}
+                    } font_14 font_700`}
                 >
                   {label}
                 </Link>

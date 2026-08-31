@@ -103,7 +103,6 @@ const Testimonial = () => {
                   isEvenOrOdd(index) ? "mt-3" : ""
                 }`}
               >
-                <div className="client_logo"></div>
                 <Image src={quote} alt="" className="client_quote" />
                 <p>{testimonial.testimonialText}</p>
                 <h4>{testimonial.clientName}</h4>

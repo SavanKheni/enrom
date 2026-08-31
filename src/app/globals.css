@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-  --orange-op: rgba(255, 100, 2, 0.7);
+  --orange-op: rgba(0, 115, 187, 0.5);
   --orange: #0073BB;
   --blue: #4d138b;
   --black: #1c1b1b;
@@ -61,7 +61,26 @@ body {
 .dark-mode .testimonial::before {
   background-image: url(../assets/images/curv-dark.svg);
 }
+.dark-mode .catalog_section{
+  background-color: var(--black);
+  color: var(--dark-white);
+}
+.dark-mode .catalog_chip{
+  background-color: var(--dark-black);
+  color: var(--dark-white);
+}
+.dark-mode .catalog_tab{
+  background-color: var(--dark-black);
+  color: var(--dark-white);
+}
+.dark-mode .catalog_title{
+  color: var(--white);
+}
+.dark-mode .catalog_search input{
+  color: var(--white);
+  background-color: var(--dark-black);
 
+}
 /* 
 .dark-mode .logo-dark {
   display: block;

@@ -385,6 +385,10 @@
 
     .footer_main_grid {
         grid-template-columns: 1fr 1fr;
+        padding: 50px 20px;
+    }
+    .footer_watermark{
+        display: none;
     }
 }
 

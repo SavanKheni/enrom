@@ -66,6 +66,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+
 }
 
 .hamburger_line {
@@ -74,12 +75,12 @@
   width: 100%;
   height: 2px;
   border-radius: 2px;
-  background: var(--white);
+  background: var(--black);
   transition: transform 0.35s ease, opacity 0.25s ease, background 0.3s ease;
 }
 
-.hamburger_dark .hamburger_line {
-  background: var(--black);
+.dark-mode .hamburger_line {
+  background: var(--white);
 }
 
 .hamburger_top {
@@ -221,5 +222,124 @@
 
   .menu {
     display: block !important;
+  }
+}
+
+/* ---------- mobile off-canvas menu ---------- */
+
+/* panel itself */
+.humMenu.offcanvas {
+  width: min(80vw, 340px) !important;
+  background-color: var(--white) !important;
+  border: none !important;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .humMenu.offcanvas {
+  background-color: var(--black) !important;
+}
+
+/* backdrop — was likely transparent/too thin, causing the page
+   content behind it to show through */
+.offcanvas-backdrop {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.offcanvas-backdrop.show {
+  opacity: 1 !important;
+}
+
+.main-drawer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px 40px;
+  background-color: var(--gray);
+}
+
+.main-drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.main-drawer-header .close {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.main-drawer-header .close:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.dark-mode .main-drawer-header .close:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .main-drawer-header .close svg path {
+  fill: var(--white);
+}
+
+/* menu links */
+.main-drawer-menus {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.main-drawer-menus a {
+  display: block;
+  padding: 16px 6px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  color: var(--black) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+
+.dark-mode .main-drawer-menus a {
+  color: var(--white);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.main-drawer-menus a:hover,
+.main-drawer-menus a.active_link {
+  color: var(--orange);
+  padding-left: 14px;
+}
+
+/* mode switch sits below the links with breathing room */
+.main-drawer-menus > div:last-child {
+  margin-top: 32px;
+  align-self: flex-start;
+}
+
+@media only screen and (max-width: 991px) {
+  .main_header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+            margin: 0;
+  }
+  .logo-light{
+    height: 60px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main-drawer {
+    padding: 20px 22px 32px;
+  }
+
+  .main-drawer-menus a {
+    font-size: 19px;
+    padding: 13px 4px;
   }
 }

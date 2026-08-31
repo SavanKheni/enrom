@@ -3,8 +3,9 @@
     background-image: url(https://www.renukalogistics.com/uploads/slider/5.jpg);
     min-height: 500px;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .testimonial::before {
