@@ -162,7 +162,7 @@ export const productCatalogData = [
     },
 ];
 
-const ProductCatalog = () => {
+const ProductCatalogSec = () => {
     const router = useRouter();
     const [activeCategory, setActiveCategory] = useState(
         productCatalogData[0].category
@@ -286,4 +286,4 @@ const ProductCatalog = () => {
     );
 };
 
-export default ProductCatalog;
+export default ProductCatalogSec;

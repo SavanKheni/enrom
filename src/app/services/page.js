@@ -7,7 +7,7 @@ import grayImg from "../../assets/images/right-grey-1.svg";
 import { useTransform, motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useIsDesktop } from "@/hooks/useMediaQuery";
-import ProductCatalog from "./ProductCatalog";
+import ProductCatalogSec from "./ProductCatalogSec";
 
 const fadeIn = (direction, delay, translate) => {
   return {
@@ -237,7 +237,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-        <ProductCatalog />
+        <ProductCatalogSec />
       </section>
     </main>
   );
