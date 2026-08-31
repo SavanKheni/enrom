@@ -26,19 +26,34 @@ const TextWrapper = () => {
 
 const testimonialData = [
   {
-    clientName: "John",
+    clientName: "Michael Turner",
     testimonialText:
-      "Excellent service given by Renuka Logistics, they provide hassle-free & on-time delivery truck service with affordable price & safety, they are really an excellent service provider.",
+      "We've been importing spices from Enorm International for over two years now. Every shipment arrives exactly as specified — consistent quality, proper documentation, and on-time export coordination. It's rare to find a supplier this reliable.",
   },
   {
-    clientName: "Parth",
+    clientName: "Ahmed Al-Farsi",
     testimonialText:
-      "Excellent service given by Renuka Logistics, they provide hassle-free & on-time delivery truck service with affordable price & safety, they are really an excellent service provider.",
+      "Enorm International has become our go-to partner for premium Indian spices. Their black pepper and cardamom are consistently top grade, and their team is always responsive when we need custom packaging or urgent orders.",
   },
   {
-    clientName: "Savan",
+    clientName: "Elena Rossi",
     testimonialText:
-      "Excellent service given by Renuka Logistics, they provide hassle-free & on-time delivery truck service with affordable price & safety, they are really an excellent service provider.",
+      "What stands out about Enorm is the transparency. From sourcing to shipment, they keep us updated at every step. The quality of their turmeric and coriander powder has helped us maintain our own product standards without any issues.",
+  },
+  {
+    clientName: "David Chen",
+    testimonialText:
+      "Professional, prompt, and precise. We switched to Enorm International for our spice imports after struggling with inconsistent suppliers, and it's been a smooth partnership ever since — great communication and solid product quality.",
+  },
+  {
+    clientName: "Priya Nair",
+    testimonialText:
+      "Enorm International's export coordination is excellent. Packaging is always handled with care, and their flexibility with order volumes has made them an easy partner to scale our business with.",
+  },
+  {
+    clientName: "Carlos Mendes",
+    testimonialText:
+      "We source pulses and whole spices from Enorm for our distribution business, and the consistency in quality batch after batch is what keeps us coming back. Genuinely one of the more trustworthy exporters we work with.",
   },
 ];
 const Testimonial = () => {

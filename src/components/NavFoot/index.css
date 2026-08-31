@@ -316,23 +316,25 @@
 }
 
 /* mode switch sits below the links with breathing room */
-.main-drawer-menus > div:last-child {
+.main-drawer-menus>div:last-child {
   margin-top: 32px;
   align-self: flex-start;
 }
 
+.main_header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+}
+
 @media only screen and (max-width: 991px) {
-  .main_header{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-            margin: 0;
-  }
-  .logo-light{
+  .logo-light {
     height: 60px;
     width: auto;
   }
 }
+
 @media only screen and (max-width: 380px) {
   .main-drawer {
     padding: 20px 22px 32px;

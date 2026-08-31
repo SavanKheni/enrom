@@ -4,9 +4,6 @@ import React, { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import "./productcatalog.css";
 
-// productCatalog.js
-// Full product range, grouped to match your existing category structure.
-// Add/remove items freely — the UI below just maps over this array.
 
 export const productCatalog = [
     {
