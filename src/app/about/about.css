@@ -11,7 +11,7 @@
 
 }
 
-.about_hero h2 {
+.about_hero h1 {
     font-size: 100px;
     font-weight: 800;
     line-height: 90px;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.about_hero h2:nth-child(2) {
+.about_hero h1:nth-child(2) {
     margin-left: 100px !important;
     color: #ffffff00;
     font-weight: 800;
@@ -39,11 +39,11 @@
     display: grid;
 }
 
-.about_us_title h1:nth-child(2) {
+.about_us_title h2:nth-child(2) {
     padding-left: 80px !important;
 }
 
-.about_us_title h1:nth-child(3) {
+.about_us_title h2:nth-child(3) {
     padding-left: 200px !important;
     line-height: 38px;
 }
@@ -84,7 +84,7 @@
     opacity: 1;
 }
 
-.about_us_title h1 {
+.about_us_title h2 {
     font-size: 100px;
     font-weight: 800;
     line-height: 90px;
@@ -137,14 +137,14 @@
 @media only screen and (max-width: 1024px) {}
 
 @media only screen and (max-width: 991px) {
-    .about_us_title h1 {
+    .about_us_title h2 {
         font-size: 65px !important;
         line-height: 53px !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .about_us_title h1 {
+    .about_us_title h2 {
         font-size: 62px !important;
         line-height: 53px !important;
     }
@@ -161,11 +161,11 @@
         margin-bottom: 10px;
     }
 
-    .about_us_title h1:nth-child(3) {
+    .about_us_title h2:nth-child(3) {
         padding-left: 111px !important;
     }
 
-    .about_hero h2 {
+    .about_hero h1 {
         font-size: 77px;
     }
 }
@@ -180,7 +180,7 @@
         margin-top: -250px;
     }
 
-    .about_us_title h1 {
+    .about_us_title h2 {
         font-size: 26px !important;
         line-height: 24px !important;
     }
@@ -189,12 +189,12 @@
         margin-top: -325px;
     }
 
-    .about_us_title h1 {
+    .about_us_title h2 {
         font-size: 26px !important;
         line-height: 24px !important;
     }
 
-    .about_hero h2 {
+    .about_hero h1 {
         font-size: 50px;
         line-height: 46px;
     }

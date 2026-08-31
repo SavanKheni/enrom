@@ -6,7 +6,7 @@
 
 
 
-.services_hero h2 {
+.services_hero h1 {
     font-size: 100px;
     font-weight: 800;
     line-height: 90px;
@@ -14,7 +14,7 @@
     text-align: center;
 }
 
-.services_hero h2:nth-child(2) {
+.services_hero h1:nth-child(2) {
     margin-left: 100px !important;
     color: #ffffff00;
     font-weight: 800;
@@ -126,7 +126,7 @@
 @media only screen and (max-width: 991px) {}
 
 @media only screen and (max-width: 768px) {
-    .services_hero h2 {
+    .services_hero h1 {
         font-size: 77px !important;
     }
 
@@ -140,7 +140,7 @@
 }
 
 @media only screen and (max-width: 625px) {
-    .services_hero h2 {
+    .services_hero h1 {
         font-size: 50px !important;
         line-height: 46px;
     }

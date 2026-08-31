@@ -147,7 +147,7 @@ const Clientele = () => {
         <div className="container">
           <div className="row">
             <div className="clientele_hero">
-              <motion.h2
+              <motion.h1
                 className="service_title_text"
                 variants={fadeIn("right", 0, -500)}
                 initial="hidden"
@@ -155,9 +155,9 @@ const Clientele = () => {
                 exit="hidden"
               >
                 LOOK
-              </motion.h2>
-              <h2>OUR</h2>
-              <motion.h2
+              </motion.h1>
+              <h1>OUR</h1>
+              <motion.h1
                 className="service_title_text"
                 variants={fadeIn("left", 0, -100)}
                 initial="hidden"
@@ -165,7 +165,7 @@ const Clientele = () => {
                 exit="hidden"
               >
                 CLIENTELE
-              </motion.h2>
+              </motion.h1>
             </div>
           </div>
           <div className="row mt-5">

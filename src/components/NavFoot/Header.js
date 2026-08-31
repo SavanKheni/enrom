@@ -74,7 +74,7 @@ const Header = () => {
                 width={isScrolled ? 90 : 110}
                 priority
                 className="logo-light"
-                alt=""
+                alt="Enorm International logo"
                 onClick={() => router.push("/")}
                 style={{ transition: "width 0.35s ease", cursor: "pointer" }}
               />

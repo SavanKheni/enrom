@@ -1,4 +1,4 @@
-.service_title h1 {
+.service_title h2 {
     font-size: 100px;
     font-weight: 800;
     line-height: 90px;
@@ -15,16 +15,16 @@
     display: grid;
 }
 
-.service_title h1:nth-child(2) {
+.service_title h2:nth-child(2) {
     padding-left: 80px !important;
 }
 
-.service_title h1:nth-child(3) {
+.service_title h2:nth-child(3) {
     padding-left: 200px !important;
     line-height: 38px;
 }
 
-.service_title h1:nth-child(4) {
+.service_title h2:nth-child(4) {
     padding-left: 400px !important;
 
 }

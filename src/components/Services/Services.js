@@ -12,12 +12,12 @@ const TextWrapperRight = ({ children, className, font }) => {
 
   return (
     <section ref={text}>
-      <motion.h1
+      <motion.h2
         style={{ x: xRight, fontSize: font, transition: "0.5s" }}
         className={className}
       >
         {children}
-      </motion.h1>
+      </motion.h2>
     </section>
   );
 };
@@ -30,12 +30,12 @@ const TextWrapperLeft = ({ children, className, font }) => {
   const xLeft = useTransform(scrollYProgress, [1, 0.6, 0], [0, 0, 1000]);
   return (
     <section ref={text}>
-      <motion.h1
+      <motion.h2
         style={{ x: xLeft, fontSize: font, transition: "0.5s" }}
         className={className}
       >
         {children}
-      </motion.h1>
+      </motion.h2>
     </section>
   );
 };
@@ -78,12 +78,12 @@ const Services = () => {
                 PREMIUM
               </TextWrapperRight>
 
-              <h1
+              <h2
                 style={{ fontSize: "130px" }}
                 className="text_orange service_title_text"
               >
                 SPICES
-              </h1>
+              </h2>
 
               <TextWrapperLeft
                 className="service_title_text"

@@ -85,7 +85,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -95,7 +95,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -105,7 +105,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -115,7 +115,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -125,7 +125,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -135,7 +135,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -145,7 +145,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"
@@ -155,7 +155,7 @@ const Association = () => {
             <Image
               draggable={false}
               src={bifa}
-              alt=""
+              alt="BIFA (British International Freight Association) membership logo"
               width={122}
               height={57}
               className="association_image"

@@ -136,7 +136,7 @@ const Services = () => {
           {/* Hero */}
           <div className="row">
             <div className="services_hero">
-              <motion.h2
+              <motion.h1
                 className="service_title_text"
                 variants={fadeIn("right", 0, -500)}
                 initial="hidden"
@@ -144,11 +144,11 @@ const Services = () => {
                 exit="hidden"
               >
                 OUR
-              </motion.h2>
+              </motion.h1>
 
-              <h2>PREMIUM</h2>
+              <h1>PREMIUM</h1>
 
-              <motion.h2
+              <motion.h1
                 className="service_title_text"
                 variants={fadeIn("left", 0, -100)}
                 initial="hidden"
@@ -156,7 +156,7 @@ const Services = () => {
                 exit="hidden"
               >
                 SPICES
-              </motion.h2>
+              </motion.h1>
             </div>
           </div>
 

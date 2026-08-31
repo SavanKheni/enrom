@@ -62,7 +62,7 @@ const Aboutsection = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 d_flex items_center">
               <div className="about_box">
                 <div>
-                  <h1 className="about_text_new">Our Mission</h1>
+                  <h2 className="about_text_new">Our Mission</h2>
 
                   <ul>
                     <li>
@@ -98,7 +98,7 @@ const Aboutsection = () => {
           <div className="col-lg-6 col-md-6 col-sm-12 d_flex items_center">
             <div className="about_box">
               <div className="about_text">
-                <h1 className="about_text_new">Our Vision</h1>
+                <h2 className="about_text_new">Our Vision</h2>
 
                 <ul>
                   <li>

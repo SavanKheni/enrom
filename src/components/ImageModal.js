@@ -38,7 +38,7 @@ const ImageModal = ({
             {index === selectedImageIndex ? (
               <Image
                 src={image}
-                alt={`Image ${index}`}
+                alt={`Enorm International gallery image ${index + 1} of ${images.length}`}
                 className="model-img"
                 priority
               />
@@ -47,13 +47,21 @@ const ImageModal = ({
         ))}
         <div className="nav-button">
           {selectedImageIndex > 0 ? (
-            <Button className="modal-btn modal-btn-left" onClick={handlePrev}>
+            <Button
+              className="modal-btn modal-btn-left"
+              onClick={handlePrev}
+              aria-label="Previous image"
+            >
               <Image src={left} alt="" priority />
             </Button>
           ) : null}
 
           {selectedImageIndex !== images.length - 1 ? (
-            <Button className="modal-btn modal-btn-right" onClick={handleNext}>
+            <Button
+              className="modal-btn modal-btn-right"
+              onClick={handleNext}
+              aria-label="Next image"
+            >
               <Image src={left} alt="" priority />
             </Button>
           ) : null}

@@ -85,7 +85,7 @@ const Gallery = () => {
           <div className="container">
             <div className="row">
               <div className="gallery_hero">
-                <motion.h2
+                <motion.h1
                   className="service_title_text"
                   variants={fadeIn("right", 0, -500)}
                   initial="hidden"
@@ -93,9 +93,9 @@ const Gallery = () => {
                   exit="hidden"
                 >
                   VIEW
-                </motion.h2>
-                <h2>OUR</h2>
-                <motion.h2
+                </motion.h1>
+                <h1>OUR</h1>
+                <motion.h1
                   className="service_title_text"
                   variants={fadeIn("left", 0, -100)}
                   initial="hidden"
@@ -103,7 +103,7 @@ const Gallery = () => {
                   exit="hidden"
                 >
                   GALLERY
-                </motion.h2>
+                </motion.h1>
               </div>
             </div>
             <motion.div
@@ -140,7 +140,7 @@ const Gallery = () => {
                       <div className="gallery_image_overlay" />
                       <Image
                         src={url}
-                        alt=""
+                        alt={`Enorm International spice export operations — photo ${i + 1}`}
                         width={500}
                         height={500}
                         className="gallery_image"

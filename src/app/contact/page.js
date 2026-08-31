@@ -121,7 +121,7 @@ const Gallery = () => {
         <div className="container">
           <div className="row">
             <div className="contact_hero">
-              <motion.h2
+              <motion.h1
                 className="service_title_text"
                 variants={fadeIn("right", 0, -500)}
                 initial="hidden"
@@ -129,11 +129,11 @@ const Gallery = () => {
                 exit="hidden"
               >
                 HAVE
-              </motion.h2>
+              </motion.h1>
 
-              <h2>ANY</h2>
+              <h1>ANY</h1>
 
-              <motion.h2
+              <motion.h1
                 className="service_title_text"
                 variants={fadeIn("left", 0, -100)}
                 initial="hidden"
@@ -141,7 +141,7 @@ const Gallery = () => {
                 exit="hidden"
               >
                 QUESTIONS?
-              </motion.h2>
+              </motion.h1>
             </div>
           </div>
 

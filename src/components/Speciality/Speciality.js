@@ -45,7 +45,7 @@ const TextWrapperRight = ({ children, className, font }) => {
 
   return (
     <section ref={text}>
-      <motion.h1
+      <motion.h2
         style={{
           x: xRight,
           fontSize: font,
@@ -54,7 +54,7 @@ const TextWrapperRight = ({ children, className, font }) => {
         className={className}
       >
         {children}
-      </motion.h1>
+      </motion.h2>
     </section>
   );
 };
@@ -75,7 +75,7 @@ const TextWrapperLeft = ({ children, className, font }) => {
 
   return (
     <section ref={text}>
-      <motion.h1
+      <motion.h2
         style={{
           x: xLeft,
           fontSize: font,
@@ -84,7 +84,7 @@ const TextWrapperLeft = ({ children, className, font }) => {
         className={className}
       >
         {children}
-      </motion.h1>
+      </motion.h2>
     </section>
   );
 };
@@ -136,12 +136,12 @@ const Speciality = () => {
                 EXPERTISE
               </TextWrapperRight>
 
-              <h1
+              <h2
                 style={{ fontSize: "130px" }}
                 className="text_orange service_title_text"
               >
                 IN INDIAN
-              </h1>
+              </h2>
 
               <TextWrapperLeft
                 className="service_title_text"

@@ -77,9 +77,9 @@ const ScrollTextLeft = ({ children, className }) => {
 
   return (
     <section ref={ref}>
-      <motion.h1 style={{ x }} className={className}>
+      <motion.p style={{ x }} className={className}>
         {children}
-      </motion.h1>
+      </motion.p>
     </section>
   );
 };
@@ -307,23 +307,23 @@ const About = () => {
 
         <div className="container">
           <div className="about_hero">
-            <motion.h2
+            <motion.h1
               className="service_title_text"
               variants={fadeIn("right", 0, -500)}
               initial="hidden"
               animate="show"
             >
               HAVE
-            </motion.h2>
-            <h2 className="service_title_text">TO KNOW</h2>
-            <motion.h2
+            </motion.h1>
+            <h1 className="service_title_text">TO KNOW</h1>
+            <motion.h1
               className="service_title_text"
               variants={fadeIn("left", 0, -100)}
               initial="hidden"
               animate="show"
             >
               ABOUT US
-            </motion.h2>
+            </motion.h1>
           </div>
 
           <div className="row mt-5">
@@ -388,13 +388,13 @@ const About = () => {
             <div className="row">
               <div className="col-12">
                 <div className="about_us_title">
-                  <h1>CHECK</h1>
-                  <h1>OUR</h1>
-                  <h1>
+                  <h2>CHECK</h2>
+                  <h2>OUR</h2>
+                  <h2>
                     <ScrollTextRight as="span" className="text_orange">
                       CERTIFICATE
                     </ScrollTextRight>
-                  </h1>
+                  </h2>
                 </div>
               </div>
             </div>

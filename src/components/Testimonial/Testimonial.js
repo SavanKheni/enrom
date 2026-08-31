@@ -17,9 +17,9 @@ const TextWrapper = () => {
 
   return (
     <section ref={text}>
-      <motion.h1 style={{ x }} className="text_orange">
+      <motion.h2 style={{ x }} className="text_orange">
         TO <span>SAY</span>
-      </motion.h1>
+      </motion.h2>
     </section>
   );
 };
@@ -92,8 +92,8 @@ const Testimonial = () => {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h1>WHAT OUR</h1>
-                <h1>CLIENTS HAVE</h1>
+                <h2>WHAT OUR</h2>
+                <h2>CLIENTS HAVE</h2>
                 <TextWrapper />
               </div>
             </div>
