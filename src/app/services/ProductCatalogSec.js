@@ -2,7 +2,7 @@
 
 import React, { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import "./productcatalog.css";
+import "./productList.css";
 
 
 export const productCatalogData = [
