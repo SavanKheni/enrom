@@ -80,11 +80,11 @@ const Gallery = () => {
 
     try {
       await emailjs.sendForm(
-        "service_ontbn7p",
-        "template_t9j5tl5",
+        "service_7diwgt4",
+        "template_j1fep29",
         formRef.current,
         {
-          publicKey: "GReW3Pi4EQevIDotQ",
+          publicKey: "f2uD0SdCJqs2B4N7B",
         },
       );
 
