@@ -7,7 +7,7 @@ import grayImg from "../../assets/images/right-grey-1.svg";
 import { useTransform, motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useIsDesktop } from "@/hooks/useMediaQuery";
-import ProductCatalog from "./productCatalog";
+import ProductCatalog from "./ProductCatalog";
 
 const fadeIn = (direction, delay, translate) => {
   return {
@@ -131,7 +131,7 @@ const Services = () => {
             />
           </div>
         </VerticalDownWrapper>
-    
+
         <div className="container">
           {/* Hero */}
           <div className="row">
@@ -237,7 +237,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-            <ProductCatalog />
+        <ProductCatalog />
       </section>
     </main>
   );

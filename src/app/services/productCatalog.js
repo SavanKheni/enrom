@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import "./productcatalog.css";
 
 
-export const productCatalog = [
+export const productCatalogData = [
     {
         category: "Seeds",
         items: [
@@ -165,7 +165,7 @@ export const productCatalog = [
 const ProductCatalog = () => {
     const router = useRouter();
     const [activeCategory, setActiveCategory] = useState(
-        productCatalog[0].category
+        productCatalogData[0].category
     );
     const [query, setQuery] = useState("");
 
@@ -179,7 +179,7 @@ const ProductCatalog = () => {
     const filteredResults = useMemo(() => {
         if (!isSearching) return null;
         const q = query.trim().toLowerCase();
-        return productCatalog
+        return productCatalogData
             .map((group) => ({
                 category: group.category,
                 items: group.items.filter((item) =>
@@ -189,7 +189,7 @@ const ProductCatalog = () => {
             .filter((group) => group.items.length > 0);
     }, [query, isSearching]);
 
-    const activeGroup = productCatalog.find(
+    const activeGroup = productCatalogData.find(
         (g) => g.category === activeCategory
     );
 
@@ -221,7 +221,7 @@ const ProductCatalog = () => {
                 {!isSearching && (
                     <div className="row">
                         <div className="catalog_tabs">
-                            {productCatalog.map((group) => (
+                            {productCatalogData.map((group) => (
                                 <button
                                     key={group.category}
                                     className={`catalog_tab ${activeCategory === group.category ? "active" : ""
