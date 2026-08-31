@@ -14,7 +14,7 @@ const Aboutsection = () => {
           <div className="col-sm-12 col-md-4 d_flex items_center order-2">
             <Image
               src={about}
-              alt="EROM International - Indian Spice Exporter"
+              alt="ENORM International - Indian Spice Exporter"
               className="img-fluid about_img"
             />
           </div>
@@ -27,7 +27,7 @@ const Aboutsection = () => {
 
             <div className="main_title_text mt-3">
               <p>
-                <b>EROM International</b> is an India-based export company
+                <b>ENORM International</b> is an India-based export company
                 specializing in premium-quality Indian spices. We bring the
                 authentic taste, aroma, and richness of India to customers and
                 businesses across international markets.
@@ -53,7 +53,7 @@ const Aboutsection = () => {
               <div className="about_img">
                 <Image
                   src={p1}
-                  alt="EROM International Indian spices"
+                  alt="ENORM International Indian spices"
                   className="img-fluid"
                 />
               </div>

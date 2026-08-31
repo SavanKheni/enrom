@@ -60,7 +60,7 @@ const Herosection = () => {
               <motion.p variants={item} className="hero_text">
                 Premium Indian spices sourced with care and exported
                 worldwide. From authentic origin to global destinations,
-                EROM International delivers quality, purity, and rich Indian
+                ENORM International delivers quality, purity, and rich Indian
                 flavour across borders.
               </motion.p>
 

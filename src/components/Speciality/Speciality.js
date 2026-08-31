@@ -151,7 +151,7 @@ const Speciality = () => {
               </TextWrapperLeft>
 
               <p>
-                At <b>EROM International</b>, our expertise lies in sourcing
+                At <b>ENORM International</b>, our expertise lies in sourcing
                 and exporting premium-quality Indian spices to markets across
                 the world. We connect trusted Indian suppliers with
                 international buyers, ensuring authentic products, consistent

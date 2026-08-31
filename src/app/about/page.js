@@ -108,7 +108,7 @@ const ScrollTextRight = ({ children, className, as = "p" }) => {
 const ABOUT_PARAGRAPHS_TOP = [
   {
     lead: "Connecting the authentic taste of India with the world.",
-    body: "EROM International is an India-based export company specializing in the sourcing and export of premium-quality Indian spices. We connect trusted Indian suppliers with international buyers, bringing the rich flavors, aromas, and heritage of Indian spices to global markets.",
+    body: "ENORM International is an India-based export company specializing in the sourcing and export of premium-quality Indian spices. We connect trusted Indian suppliers with international buyers, bringing the rich flavors, aromas, and heritage of Indian spices to global markets.",
   },
   {
     body: "Our approach is built around quality, reliability, and long-term relationships. From carefully selecting our products to coordinating export-ready packaging and international shipments, we focus on maintaining consistency and delivering a dependable experience to every customer.",
@@ -116,7 +116,7 @@ const ABOUT_PARAGRAPHS_TOP = [
 ];
 
 const ABOUT_PARAGRAPHS_BOTTOM = [
-  "India is known around the world for its rich variety of spices, and EROM International is committed to taking that heritage beyond borders. We work with trusted sourcing partners to offer authentic spices that meet the expectations of international food businesses and buyers.",
+  "India is known around the world for its rich variety of spices, and ENORM International is committed to taking that heritage beyond borders. We work with trusted sourcing partners to offer authentic spices that meet the expectations of international food businesses and buyers.",
   "Our dedicated team manages every stage of the export process with attention to detail, from sourcing and product selection to documentation, packaging, and shipment coordination. This allows us to create a smooth and reliable experience for our global customers.",
 ];
 

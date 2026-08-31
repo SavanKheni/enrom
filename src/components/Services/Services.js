@@ -94,7 +94,7 @@ const Services = () => {
 
               <p>
                 Discover the authentic taste and aroma of Indian spices.
-                EROM International sources and exports quality spices from
+                ENORM International sources and exports quality spices from
                 India, connecting trusted suppliers with food businesses and
                 buyers across global markets.
               </p>

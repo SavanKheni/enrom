@@ -183,7 +183,7 @@ const Services = () => {
                 className="main_title_text"
               >
                 <p className="services_text">
-                  At <b>EROM International</b>, we bring the authentic taste
+                  At <b>ENORM International</b>, we bring the authentic taste
                   and aroma of India to global markets. Our spices are
                   carefully sourced from trusted Indian suppliers and selected
                   with a focus on quality, consistency, and authenticity.

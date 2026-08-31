@@ -199,7 +199,7 @@ const Clientele = () => {
               >
                 <p className="clientele_text">
                   <b>
-                    At EROM International, we are proud to build strong and lasting
+                    At ENORM International, we are proud to build strong and lasting
                     relationships with businesses that value the authentic taste and
                     quality of Indian spices.
                   </b>{" "}
@@ -218,7 +218,7 @@ const Clientele = () => {
 
                 <p className="clientele_text">
                   From India&apos;s spice-growing regions to markets across the world,
-                  <b> EROM International</b> aims to make sourcing premium Indian spices
+                  <b> ENORM International</b> aims to make sourcing premium Indian spices
                   simple, reliable, and transparent.
                 </p>
               </motion.div>
