@@ -250,9 +250,8 @@ const Gallery = () => {
       {/* =========================
           GOOGLE MAP
       ========================== */}
-
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.7795418154797!2d72.87525077439327!3d21.24058898047102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f4863f918a1%3A0x6703550502a89486!2sAbc-2%20Building!5e0!3m2!1sen!2sin!4v1699109420553!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d220.94527840630198!2d72.81423076150209!3d21.2261125974791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDEzJzM0LjMiTiA3MsKwNDgnNTEuMyJF!5e1!3m2!1sen!2sin!4v1788769262069!5m2!1sen!2sin"
         width="100%"
         height="450"
         style={{

@@ -15,9 +15,6 @@ import { useIsDesktop } from "@/hooks/useMediaQuery";
 // Swap paths as real distinct assets come in — your CSS only had cer-1.jpeg + cer.jpg.
 import cert1Img from "../../assets/images/cer-1.jpeg";
 import cert2Img from "../../assets/images/cer-2.jpeg";
-import cert3Img from "../../assets/images/cer-3.jpeg";
-import cert4Img from "../../assets/images/cer-4.jpeg";
-import cert5Img from "../../assets/images/cer-5.jpeg";
 
 /* ---------------------------------------------------------
    Shared animation helpers (unchanged)
@@ -128,39 +125,18 @@ const ABOUT_CLOSING_TEXT =
 const CERTIFICATES = [
   {
     id: "cert-1",
-    title: "ISO CERTIFICATION",
+    title: "FSSAI CERTIFICATION",
     description:
-      "Enorm International holds active ISO certification, reflecting our commitment to consistent quality and process standards across every shipment we manage.",
+      "Enorm International holds active FSSAI certification, demonstrating our commitment to food safety, quality standards, and compliance in the handling and export of food products.",
     image: cert1Img,
   },
   {
     id: "cert-2",
-    title: "IATA AFFILIATION",
-    description:
-      "Our air freight operations are supported by IATA-affiliated partners, ensuring compliance and reliability across international air cargo movements.",
-    image: cert2Img,
-  },
-  {
-    id: "cert-3",
-    title: "CUSTOMS COMPLIANCE",
-    description:
-      "We maintain full customs compliance documentation across all import/export operations, minimising delays at every port of entry.",
-    image: cert3Img,
-  },
-  {
-    id: "cert-4",
     title: "GST REGISTRATION",
     description:
-      "Fully GST-registered and compliant, ensuring transparent, audit-ready invoicing for every client engagement.",
-    image: cert4Img,
-  },
-  {
-    id: "cert-5",
-    title: "MSME REGISTERED",
-    description:
-      "Registered under MSME, supporting our role as a trusted logistics partner to businesses of every scale across India.",
-    image: cert5Img,
-  },
+      "Enorm International is registered under GST, ensuring transparent, compliant, and well-structured business operations in accordance with applicable Indian tax regulations.",
+    image: cert2Img,
+  }
 ];
 
 /* ---------------------------------------------------------
@@ -173,7 +149,11 @@ const CertificateCard = ({ cert, variant, onOpen, index }) => (
   <div className="col-lg-3 col-md-4 col-sm-6 col-12">
     <div
       className={`about_us_box${variant ? ` about_us_box_${variant}` : ""}`}
-      style={{ backgroundImage: `url(${cert.image.src})`, cursor: "pointer" }}
+      style={{
+        backgroundImage: `url(${cert.image.src})`, cursor: "pointer", backgroundPosition: "top",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+      }}
       onClick={() => onOpen(index)}
       role="button"
       tabIndex={0}
